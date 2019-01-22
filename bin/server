@@ -27,7 +27,7 @@ const options = program.opts();
 const server = CreateServer({
     max_tcp_sockets: options['max-sockets'],
     secure: options.secure,
-    domain: options.domain,
+    domain: options.domain
 });
 
 server.listen(options.port, options.address, () => {
