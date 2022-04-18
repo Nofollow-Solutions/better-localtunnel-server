@@ -3,9 +3,9 @@ FROM node:16.14.2-alpine3.14
 WORKDIR /app
 
 COPY package.json /app/
-COPY yarn.lock /app/
+COPY package-lock.json /app/
 
-RUN yarn install --production && yarn cache clean
+RUN npm install --production && npm cache clean
 
 COPY . /app
 
