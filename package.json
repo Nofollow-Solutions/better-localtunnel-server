@@ -31,6 +31,7 @@
   "scripts": {
     "test": "jest",
     "start": "./bin/server",
-    "dev": "node-dev bin/server --port 3000"
+    "dev": "node-dev bin/server --port 3000",
+    "audit": "npx better-npm-audit audit"
   }
 }
