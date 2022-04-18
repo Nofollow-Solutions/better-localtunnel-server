@@ -1,4 +1,4 @@
-# localtunnel-server
+# better-localtunnel-server
 
 [![Build Status](https://travis-ci.org/localtunnel/server.svg?branch=master)](https://travis-ci.org/localtunnel/server)
 
