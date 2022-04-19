@@ -10,4 +10,4 @@ RUN npm install --production && npm cache clean
 COPY . /app
 
 ENV NODE_ENV production
-ENTRYPOINT ["node", "-r", "esm", "./bin/server"]
+ENTRYPOINT ["node", "./bin/server"]
