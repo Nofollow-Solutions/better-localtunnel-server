@@ -6,5 +6,8 @@
   "1067635": {
     "active": true,
     "notes": "Ignored since it's a pure development dependency"
+  },
+  "1070072" : {
+    "notes": "Ignored since it's a pure development dependency (ws)"
   }
 }
