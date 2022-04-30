@@ -24,4 +24,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag rubenfrcordeiro/better-localtunnel-server:${{ steps.package-version.outputs.current-version}}-SNAPSHOT
     - name: Publish the Docker image
-      run: docker push ${{secrets.DOCKER_USER}}/better-localtunnel-server
+      run: docker push ${{secrets.DOCKER_USER}}/better-localtunnel-server:${{ steps.package-version.outputs.current-version}}-SNAPSHOT
