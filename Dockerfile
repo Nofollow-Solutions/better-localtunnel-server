@@ -5,7 +5,8 @@ WORKDIR /app
 COPY package.json /app/
 COPY package-lock.json /app/
 
-RUN npm install --production && npm cache clean
+RUN npm install -g npm@8.8.0
+RUN npm install --omit=dev
 
 COPY . /app
 
